@@ -16,10 +16,11 @@ jobs:
 
       - name: Build with Maven  
         run: mvn clean package
-      - name: Download the code from artifact
-        uses: actions/download-artifact@v3
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: source-code
-          path: .
+          name: my-artifact
+          path: output/
+          retention-days: 7 
   
     
