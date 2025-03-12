@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: my-artifact
-          path: output/
+          path: target/
           retention-days: 7 
   
     
