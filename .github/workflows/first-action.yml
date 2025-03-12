@@ -6,4 +6,10 @@ jobs:
     steps:
       - name: get code
         uses: actions/checkout@v3 
+      - name: SSH to Runner session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          ssh-only: true
+      - name: Wait for user connection
+        run: sleep 2m    
     
