@@ -1,11 +1,9 @@
 name: first workflow
-on: workflow_dispatch
+on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: greeting
-        run: |
-          echo "good mrng"
-          echo "good evng"  
+      - name: get code
+        uses: actions/checkout@v3 
     
