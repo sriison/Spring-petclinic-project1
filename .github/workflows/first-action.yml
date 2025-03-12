@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: greeting
-        run: echo "good mrng"
-      - name: print greet
-        run: echo "good evng"  
+        run: |
+          echo "good mrng"
+          echo "good evng"  
     
